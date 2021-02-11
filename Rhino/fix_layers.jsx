@@ -31,7 +31,7 @@ function addToLayer(item, layer_obj, string_path) {
     }
     
     // add this layer
-    var new_layer = layer_obj.layers.add();
+    var new_layer = layer_obj.layers.add(ElementPlacement.PLACEATEND);
     new_layer.name = top_layer;
     string_path.shift();
     return addToLayer(item, new_layer, string_path);
