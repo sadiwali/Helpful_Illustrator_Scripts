@@ -5,3 +5,4 @@ fix_layers.jsx
 ---
 Brings back the layer hierarchy from Rhino to Illustrator.
 Just open your exported .ai file in Illustrator first, then run the script.
+Note: Right now, the script flips the layer order. I'm working on a fix...

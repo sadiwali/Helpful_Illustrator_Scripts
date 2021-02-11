@@ -36,5 +36,3 @@ function addToLayer(item, layer_obj, string_path) {
     string_path.shift();
     return addToLayer(item, new_layer, string_path);
 }
-
-alert("Done");
