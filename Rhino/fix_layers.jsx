@@ -1,10 +1,18 @@
 ﻿var doc = app.activeDocument;
 
-var things = doc.pathItems;
+var things_r = doc.pathItems;
+var things = [];
+
+
+for (var i = things_r.length - 1; i >= 0; i--) {
+    things.push(things_r[i]);
+}
 
 for (var i = 0; i < things.length; i++) {
     var string_path = things[i].layer.name.split("::");
-    addToLayer(things[i], doc, string_path);
+    if (string_path.length > 1) {
+        addToLayer(things[i], doc, string_path);
+    }
 }
 
 function addToLayer(item, layer_obj, string_path) {
