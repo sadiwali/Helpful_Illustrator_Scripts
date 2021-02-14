@@ -15,6 +15,7 @@ for (var i = 0; i < things.length; i++) {
     }
 }
 
+
 function addToLayer(item, layer_obj, string_path) {
 
     if (string_path.length == 0) {
@@ -23,7 +24,7 @@ function addToLayer(item, layer_obj, string_path) {
         // remove the empty layer
         for (var i = 0; i  < doc.layers.length; i++) {
             var targetLayer = doc.layers[i];
-            if (targetLayer.name ==old_layer) {
+            if (targetLayer.name ==old_layer && targetLayer.pathItems.length <= 0) {
                 doc.layers[i].remove();
             }
         }
