@@ -1,6 +1,6 @@
 ## fix_layers.jsx
 ###### How to Use:
-Open the exported .AI file in Illustrator.
+Open the .AI file you exported from Rhino in Illustrator.
 Go to File > Scripts > Other Script... and choose the script you want to run.
 ###### What it does: 
 Brings back the layer hierarchy from Rhino to Illustrator.
